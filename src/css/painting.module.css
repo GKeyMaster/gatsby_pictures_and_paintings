@@ -1,0 +1,54 @@
+.painting-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 2rem 0 0 0;
+  overflow: hidden;
+}
+
+.painting-container:first-of-type {
+  margin: 0;
+}
+
+.btn-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 1em 0.6em;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: var(--main-transition);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: 2px solid var(--main-text-color);
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.btn-details:hover {
+  text-decoration: none;
+}
+
+.painting-container:hover .btn-details {
+  opacity: 1;
+  color: var(--main-text-color);
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .painting-container {
+    width: 45%;
+    margin: 4rem 0 0 0;
+  }
+
+  .painting-container:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .painting-container {
+    width: 40%;
+  }
+}

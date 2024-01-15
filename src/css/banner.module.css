@@ -1,0 +1,23 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+
+.bullet {
+  font-size: 1.5rem;
+
+}
+
+@media screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+  
+  .banner h3 {
+    font-size: 1.5rem;
+  }
+}
